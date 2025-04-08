@@ -1,0 +1,31 @@
+
+
+html {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+  background-color: #f0f0f0;  /* Light background */
+  color: #1f2937;  /* Light text color */
+}
+
+html.dark body {
+  background-color: #121212;  /* Dark background */
+  color: #ffffff;  /* Dark text color */
+}
+
+
+
+.input {
+    @apply w-full p-2 border rounded dark:bg-gray-700 dark:text-white;
+  }
+  .error {
+    @apply text-red-500 text-sm mt-1;
+  }
+  .btn-primary {
+    @apply bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700;
+  }
+  .btn-secondary {
+    @apply bg-gray-500 text-white px-4 py-2 rounded hover:bg-gray-600;
+  }
+  
