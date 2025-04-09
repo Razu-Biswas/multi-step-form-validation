@@ -7,8 +7,6 @@ import { useState } from "react";
 
 const inter = Inter({ subsets: ["latin"] });
 
-// app/layout.tsx
-
 export default function RootLayout({
   children,
 }: {

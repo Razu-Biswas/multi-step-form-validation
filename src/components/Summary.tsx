@@ -92,7 +92,7 @@ export default function Summary({ data, prev, reset }: any) {
           onClick={() => mutation.mutate(data)}
           disabled={mutation.isPending}
         >
-          {mutation.isPending ? "Submitting..." : "✅ Submit"}
+          {mutation.isPending ? "Submitting ... " : "✅ Submit"}
         </button>
       </div>
 

@@ -1,28 +1,16 @@
-// tailwind.config.js
-module.exports = {
-  darkMode: "class", // important!
-  content: [
-    "./app/**/*.{js,ts,jsx,tsx}",
-    "./pages/**/*.{js,ts,jsx,tsx}",
-    "./components/**/*.{js,ts,jsx,tsx}",
-  ],
-  theme: {
-    extend: {
-      colors: {
-        "light-bg": "#f0f0f0",
-        "light-text": "#1a202c",
-        "light-primary": "#4f46e5",
-        "light-secondary": "#e0e7ff",
+import type { Config } from 'tailwindcss'
 
-        "dark-bg": "#1a202c",
-        "dark-text": "#f0f0f0",
-        "dark-primary": "#818cf8",
-        "dark-secondary": "#2d3748",
-      },
-    },
+const config: Config = {
+  content: ['./src/**/*.{js,ts,jsx,tsx}'],
+  darkMode: 'class',
+  theme: {
+    extend: {},
   },
   plugins: [],
-};
+}
+
+export default config
+
 
 
   

@@ -23,7 +23,7 @@ export default function Home() {
     const root = document.documentElement;
     console.log(root);
     if (darkMode) {
-      root.classList.add("bg-blue-200");
+      root.classList.add("dark");
       localStorage.setItem("theme", "dark");
     } else {
       root.classList.remove("dark");
